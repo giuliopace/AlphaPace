@@ -1,2 +1,2 @@
-# MancalAI
+# AlphaPace
 AI to play Mancala
