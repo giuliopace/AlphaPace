@@ -90,4 +90,9 @@ if __name__ == "__main__":
 	model.save("models/AlphaPace.h5")
 	print(round((time.time() - start_time),2), "s")
 	
+	#x = load_one("test_data2.txt")
+	#x = x.reshape(1, -1, x.shape[1])
+	#print(model.predict(x))
+
+
 	print("allgood")
