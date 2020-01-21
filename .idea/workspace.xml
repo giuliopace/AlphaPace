@@ -39,6 +39,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.pwd.mancala" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.AlphaPace">
     <configuration name="AlphaPace" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="at.pwd.boardgame.Main" />
@@ -90,7 +95,9 @@
       <option name="presentableId" value="Default" />
       <updated>1578666659204</updated>
       <workItem from="1578666666723" duration="2705000" />
-      <workItem from="1578670037447" duration="19680000" />
+      <workItem from="1578670037447" duration="20282000" />
+      <workItem from="1579110657566" duration="2015000" />
+      <workItem from="1579514548863" duration="13882000" />
     </task>
     <servers />
   </component>
@@ -110,22 +117,22 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="553" y="294" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1578670070973" />
-    <state width="1458" height="256" key="GridCell.Tab.0.bottom" timestamp="1578760052152">
+    <state width="1458" height="256" key="GridCell.Tab.0.bottom" timestamp="1579530175539">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1578760052152" />
-    <state width="1458" height="256" key="GridCell.Tab.0.center" timestamp="1578760052152">
+    <state width="1458" height="256" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1579530175539" />
+    <state width="1458" height="256" key="GridCell.Tab.0.center" timestamp="1579530175539">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1578760052152" />
-    <state width="1458" height="256" key="GridCell.Tab.0.left" timestamp="1578760052151">
+    <state width="1458" height="256" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1579530175539" />
+    <state width="1458" height="256" key="GridCell.Tab.0.left" timestamp="1579530175539">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1578760052151" />
-    <state width="1458" height="256" key="GridCell.Tab.0.right" timestamp="1578760052152">
+    <state width="1458" height="256" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1579530175539" />
+    <state width="1458" height="256" key="GridCell.Tab.0.right" timestamp="1579530175539">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1578760052152" />
+    <state width="1458" height="256" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1579530175539" />
     <state x="252" y="113" key="SettingsEditor" timestamp="1578672478627">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
