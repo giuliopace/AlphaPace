@@ -11,6 +11,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import org.apache.log4j.BasicConfigurator;
+import org.deeplearning4j.nn.modelimport.keras.KerasModelImport;
+import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
+import org.nd4j.linalg.api.ndarray.INDArray;
+import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.io.ClassPathResource;
+
 
 public class AlphaPace_backup implements MancalaAgent {
     private static final int STARTING_DEPTH = 3; //TODO: starting depth
@@ -22,6 +29,18 @@ public class AlphaPace_backup implements MancalaAgent {
     @Override
     public MancalaAgentAction doTurn(int computationTime, MancalaGame mancalaGame) {
         //selfPlay(computationTime, mancalaGame);
+        BasicConfigurator.configure();
+        INDArray test = Nd4j.ones(1,14,6);
+
+        try {
+            String fullModel = new ClassPathResource("AlphaPace.h5").getFile().getPath();
+            MultiLayerNetwork model = KerasModelImport.importKerasSequentialModelAndWeights(fullModel);
+            double prediction = model.output(test).getDouble(0);
+            System.out.println("Prediction: " + prediction);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
         return doTurn2(computationTime, mancalaGame);
     }
 
@@ -161,7 +180,11 @@ public class AlphaPace_backup implements MancalaAgent {
 
     private double alphaBeta(MancalaGame simulation, int depth, double alpha, double beta, boolean maximizingPlayer) {
         if (depth == 0 || !(simulation.checkIfPlayerWins().getState() == WinState.States.NOBODY)) {
-            return simulation.getState().stonesIn("8") - simulation.getState().stonesIn("1"); //TODO: heuristic of node
+            if (simulation.getState().getCurrentPlayer() == 0) {
+                return simulation.getState().stonesIn("8") - simulation.getState().stonesIn("1"); //TODO: heuristic of node
+            } else {
+                return simulation.getState().stonesIn("1") - simulation.getState().stonesIn("8");
+            }
         }
         List<String> possibleMoves = simulation.getSelectableSlots();
         if (maximizingPlayer) {
