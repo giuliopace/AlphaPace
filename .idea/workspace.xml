@@ -23,6 +23,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WCw0JENECvtjHuoIg83ETEHqUS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,11 +40,20 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.pwd.mancala" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David Penz\Documents\Projects\mancala\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.AlphaPace">
     <configuration name="AlphaPace" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="at.pwd.boardgame.Main" />
       <module name="mancala.main" />
       <option name="PROGRAM_PARAMETERS" value="at.pwd.mancala.AlphaPace" />
+      <shortenClasspath name="ARGS_FILE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,6 +71,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.AlphaPace" />
+      <item itemvalue="Application.Test" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
@@ -90,46 +104,57 @@
       <option name="presentableId" value="Default" />
       <updated>1578666659204</updated>
       <workItem from="1578666666723" duration="2705000" />
-      <workItem from="1578670037447" duration="19680000" />
+      <workItem from="1578670037447" duration="20282000" />
+      <workItem from="1579110657566" duration="2015000" />
+      <workItem from="1579514548863" duration="16935000" />
+      <workItem from="1579630118371" duration="295000" />
+      <workItem from="1579630447777" duration="912000" />
+      <workItem from="1579631393371" duration="661000" />
+      <workItem from="1579632131770" duration="9483000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="467" y="140" key="#AlphaPace" timestamp="1578666899611">
+    <state x="467" y="140" key="#AlphaPace" timestamp="1579629112971">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="467" y="140" key="#AlphaPace/0.0.1500.960@0.0.1500.960" timestamp="1578666899611" />
-    <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578671550787">
+    <state x="467" y="140" key="#AlphaPace/0.0.1500.960@0.0.1500.960" timestamp="1579629112971" />
+    <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579629205625">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1578671550787" />
+    <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1579629205625" />
     <state x="553" y="294" key="FileChooserDialogImpl" timestamp="1578670070973">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="553" y="294" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1578670070973" />
-    <state width="1458" height="256" key="GridCell.Tab.0.bottom" timestamp="1578760052152">
+    <state width="1458" height="329" key="GridCell.Tab.0.bottom" timestamp="1579641326793">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1578760052152" />
-    <state width="1458" height="256" key="GridCell.Tab.0.center" timestamp="1578760052152">
+    <state width="1458" height="329" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1579641326793" />
+    <state width="1458" height="329" key="GridCell.Tab.0.center" timestamp="1579641326793">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1578760052152" />
-    <state width="1458" height="256" key="GridCell.Tab.0.left" timestamp="1578760052151">
+    <state width="1458" height="329" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1579641326793" />
+    <state width="1458" height="329" key="GridCell.Tab.0.left" timestamp="1579641326793">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1578760052151" />
-    <state width="1458" height="256" key="GridCell.Tab.0.right" timestamp="1578760052152">
+    <state width="1458" height="329" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1579641326793" />
+    <state width="1458" height="329" key="GridCell.Tab.0.right" timestamp="1579641326793">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="256" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1578760052152" />
-    <state x="252" y="113" key="SettingsEditor" timestamp="1578672478627">
+    <state width="1458" height="329" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1579641326793" />
+    <state x="252" y="113" key="SettingsEditor" timestamp="1579630158525">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="252" y="113" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1578672478627" />
+    <state x="252" y="113" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1579630158525" />
     <state x="446" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1578670052510">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
