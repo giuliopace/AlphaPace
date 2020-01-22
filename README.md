@@ -1,5 +1,5 @@
 # AlphaPace
-AI to play Mancala - alpha-beta pruning guided search algorithm which evaluates the possibility of a win based on the board states within the branch using a simple RNN.
+AI to play Mancala - alpha-beta pruning guided search algorithm which evaluates the possibility of a win based on the board states within the branch using a Recurrent Neural Network.
 
 ## Student Data
 David Penz, 11703497
@@ -10,15 +10,20 @@ Giulio Pace, 11835706
 The initial idea for the agent was an architectur revolving around optimising the alpha-beta pruning algorithm. For this purpose, we implemented alpha-beta pruning from scratch and tried to enhance the algorithm with the following optimisations:
 - iterative deepening search - starting with a shallow depth to speed up the initial alpha-beta pruning, but continuing to deepen the search tree after each iteration until the set time limit is met (idea: explore more in into the future if the time allows)
 - selection criteria - in case two or more nodes will result an identical heuristic value, both starting moves will be added to a list and then selected randomly by the agent when deciding where to move
-- heuristic optimisation
+- more elaborate heuristic method: Similarly to stockfish centipawn evaluation, we try to not only evaluate OwnDepot - EnemyDepot, but we implemented a heuristic that keeps into account the position of all stones. 
 
-Unfortunately, this initial idea (see "AlphaPace_old.java" as reference for the code) turned out to not work properly when chosing the same heuristic (own depot - enemy depot) as in the pre-built alpha-beta pruning agent of the provided engine. Therefore, we decided to use the pre-built alpha-beta pruning agent as skeleton and focus on the following two criteria:
+Unfortunately, this initial idea (see "AlphaPace_old.java" as reference for the code) was very weak, as even the pre-built alpha-beta pruning agent of the provided engine would beat it easily. Therefore, we decided to use the pre-built alpha-beta pruning agent as skeleton and focus on the following ideas:
 
-### Heuristic Optimisation
-As core concept of our agent, we decided to go for a (kinda) similar idea as DeepMind's AlphaGo / AlphaZero application. Obviously, our agent is way less complex as it uses alpha-beta pruning instead of Monte Carlo Tree Search and also just one very simple RNN for evaluating the board states within the search. We created a method "selfPlay" within the agents class (as we could not find another way to simulate games without starting the GUI) which creates a copy of the current game and runs multiple simulations of agent vs agent (thus, the name selfPlay). Afterwards, the neural network is being trained on all simulated games and evaluated. Then the whole process starts over again and again and again ...
+### RNN as Heuristic
+As core concept of our agent, we we took inspiration from DeepMind's AlphaGo / AlphaZero. Obviously our agent is way less complex and uses alpha-beta pruning instead of Monte Carlo Tree Search. 
+The evaluation is performed by a simple RNN: we feed a board state to the network, that will return its prediction on the probability of victory in the given position.
+
+### SelfPlay for training
+We created a method "selfPlay" within the agents class in order to simulate games without starting the GUI and to store the game states. The method creates a copy of the current game and runs multiple simulations where the agents plays against itself. After a batch of games, the neural network is trained on the simulated games and evaluated. This process has been repeated six times with batch of games that vary in size from 300 to 1000.
 
 ### Selection Criteria
-As we now use a neural network to predict the outcome of the game based on the board states (0 for loss - 1 for win), we had to come up with another selection criteria as the heuristic values are very unlikely to be the same. Therefore, we introduced the parameter DELTA, which acts as an allowed deviation from the alpha value where a move is considered to be of "equal value".
+To include some randomness in our algorithm we introduced the parameter delta. When we evaluate a position, we add it in the pool of "best positions" if it is in the range of (best - delta) - (best + delta). If it is better than best + delta it becomes the new best.
+
 
 ## Info on Setup
 The agent itself can be found as "AlphaPace.java" or "AlphaPace.jar" (class name: at.pwd.mancala.AlphaPace).
