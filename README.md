@@ -8,6 +8,16 @@ Giulio Pace, 11835706
 
 ## Info on architecture
 
+## Dependencies
+
+dependencies {
+	compile "org.deeplearning4j:deeplearning4j-core:1.0.0-beta2"
+	compile "org.deeplearning4j:deeplearning4j-modelimport:1.0.0-beta2"
+	compile "org.nd4j:nd4j-native-platform:1.0.0-beta2"
+	compile "org.eclipse.jetty:jetty-server:9.4.9.v20180320"
+	compile "com.google.cloud.dataflow:google-cloud-dataflow-java-sdk-all:2.2.0"
+}
+
 
 ## Hardware Specs
 ### Computer 1

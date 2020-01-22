@@ -75,12 +75,12 @@ if __name__ == "__main__":
 	logging.disable(logging.WARNING)
 	os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
-	epochs = 25
+	epochs = 150
 	data = datagen()
 	
 	#model = define_model()
-
 	model = load_model("models/AlphaPace.h5")
+
 	print("model loaded")
 
 	for (x1,y1),(x2,y2) in tqdm(data):
@@ -90,9 +90,10 @@ if __name__ == "__main__":
 	model.save("models/AlphaPace.h5")
 	print(round((time.time() - start_time),2), "s")
 	
-	#x = load_one("test_data2.txt")
-	#x = x.reshape(1, -1, x.shape[1])
-	#print(model.predict(x))
+	x = load_one("test_data1.txt")
+	x = x.reshape(1, -1, x.shape[1])
+#	x = np.ones((1,6,14))
+#	print(model.predict(x))
 
 
 	print("allgood")
